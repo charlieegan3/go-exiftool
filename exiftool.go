@@ -16,7 +16,7 @@ import (
 var binary = "exiftool"
 var executeArg = "-execute"
 var initArgs = []string{"-stay_open", "True", "-@", "-", "-common_args"}
-var extractArgs = []string{"-j"}
+var extractArgs = []string{"-j", "-c", `'%.6f'`}
 var closeArgs = []string{"-stay_open", "False", executeArg}
 var readyTokenLen = len(readyToken)
 
